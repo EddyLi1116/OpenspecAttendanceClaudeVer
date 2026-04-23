@@ -1,0 +1,25 @@
+.spectra/
+openspec/.vector-search.db*
+
+# .NET build artifacts
+bin/
+obj/
+*.user
+*.suo
+.vs/
+TestResults/
+
+# Local email outbox (may contain initial passwords in dev)
+src/AttendanceSystem.Api/App_Data/outbox/
+
+# Frontend
+web/node_modules/
+web/dist/
+web/.vite/
+
+# Environment
+.env.local
+
+# Local Claude / E2E session artifacts (contain JWT tokens, cookies, dev creds)
+.claude/
+.e2e/

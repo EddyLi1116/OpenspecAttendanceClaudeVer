@@ -1,0 +1,42 @@
+schema: spec-driven
+
+context: |
+  專案文件預設使用繁體中文撰寫。
+  技術棧：React 前端、ASP.NET Core API 後端、MySQL 資料庫(本機已安裝)。
+  領域：單一公司內部使用的出缺勤管理系統，包含帳號權限、打卡、請假、加班、簽核與代理人制度。
+  Capability 名稱、API 路徑、enum、程式識別字與技術產品名稱應保留英文，以避免影響後續實作與工具解析。
+
+rules:
+  proposal:
+    - 使用繁體中文撰寫 Why、What Changes、Impact 等內容。
+    - Capability 識別名稱維持 kebab-case 英文，描述文字使用繁體中文。
+  design:
+    - 使用繁體中文撰寫架構決策、目標、非目標、風險與取捨。
+    - 技術名詞可保留英文，但需以中文說明其用途與理由。
+  specs:
+    - 使用繁體中文撰寫需求與情境內容。
+    - 每個需求都必須具備可驗證的情境。
+    - 若 OpenSpec CLI 對章節關鍵字有格式限制，保留工具必要的最小英文標題、Scenario 格式與 SHALL/MUST 關鍵字。
+  tasks:
+    - 使用繁體中文撰寫任務內容。
+    - 保留 checkbox 格式 `- [ ]`，讓 OpenSpec apply 流程可追蹤進度。
+
+
+# Project context (optional)
+# This is shown to AI when creating artifacts.
+# Add your tech stack, conventions, style guides, domain knowledge, etc.
+# Example:
+#   context: |
+#     Tech stack: TypeScript, React, Node.js
+#     We use conventional commits
+#     Domain: e-commerce platform
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always include a "Non-goals" section
+#     tasks:
+#       - Break tasks into chunks of max 2 hours
